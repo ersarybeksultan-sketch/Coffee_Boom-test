@@ -14,7 +14,7 @@
 <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
 <script>
 (function(){
-  emailjs.init("bWlse3hihf2g0PqRK");
+  emailjs.init("bWlse3hihf2g0PqRK"); /* Твой public key */
 })();
 </script>
 </head>
@@ -32,6 +32,8 @@
 <div id="step2" class="hidden">
   <h2>Тест Coffee Boom</h2>
   <form id="quizForm">
+
+    <!-- Все 30 вопросов -->
     <div class="question"><p>1. Через сколько секунд официант должен подойти к гостю после входа?</p><label><input type="radio" name="q1" value="a"> 15 секунд</label><br><label><input type="radio" name="q1" value="b"> 30 секунд</label><br><label><input type="radio" name="q1" value="c"> 1 минута</label><br><label><input type="radio" name="q1" value="d"> 2 минуты</label></div>
     <div class="question"><p>2. В каком порядке нужно приветствовать гостя в зависимости от времени суток?</p><label><input type="radio" name="q2" value="a"> Русский, потом казахский</label><br><label><input type="radio" name="q2" value="b"> Казахский, потом русский</label><br><label><input type="radio" name="q2" value="c"> Любой порядок</label><br><label><input type="radio" name="q2" value="d"> На одном языке</label></div>
     <div class="question"><p>3. Гость с детьми садится за стол. Что нужно сделать в первую очередь?</p><label><input type="radio" name="q3" value="a"> Принести меню</label><br><label><input type="radio" name="q3" value="b"> Принести детский стул и рассказать про детскую зону</label><br><label><input type="radio" name="q3" value="c"> Принести воду</label><br><label><input type="radio" name="q3" value="d"> Сразу принять заказ</label></div>
@@ -131,7 +133,7 @@
     document.getElementById("step2").classList.add("hidden");
     document.getElementById("step3").classList.remove("hidden");
 
-    emailjs.send("service_3jhsam6", "template_bjg5viw", {
+    emailjs.send("service_b7essld", "template_bjg5viw", {
       fio: fio,
       location: location,
       score: percent,
@@ -146,5 +148,4 @@
 </script>
 
 </body>
-
 </html>
